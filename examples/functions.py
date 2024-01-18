@@ -48,3 +48,14 @@ if __name__ == '__main__': # Se for o programa principal
 # OU 
     for g in quadrados:
         print(g) # 1 4 9 16 25
+
+def contador(num=11, caractere='+'): # Função com argumentos variáveis
+    for i in range(1, num): # Para cada elemento de args
+        print(caractere) # Imprime o elemento
+
+if __name__ == '__main__':
+    contador() # Imprime 10 vezes o caractere +
+    contador(5) # Imprime 4 vezes o caractere +
+    contador(3, '*') # Imprime 2 vezes o caractere *
+    contador(caractere='-', num=5) # Imprime 4 vezes o caractere -
+    contador(num=3, caractere='*') # Imprime 2 vezes o caractere *
