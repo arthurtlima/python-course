@@ -59,3 +59,17 @@ if __name__ == '__main__':
     contador(3, '*') # Imprime 2 vezes o caractere *
     contador(caractere='-', num=5) # Imprime 4 vezes o caractere -
     contador(num=3, caractere='*') # Imprime 2 vezes o caractere *
+
+x = 5
+y = 3
+z = 6
+
+def soma_mult(a, b, c = 0):
+    if c == 0:
+        return a * b
+    else:
+        return a * b + c
+
+if __name__ == '__main__':
+    res = soma_mult(x, y, z) # Chama a função soma_mult()
+    print(res) # 15
