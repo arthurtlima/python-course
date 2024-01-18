@@ -68,8 +68,10 @@ def soma_mult(a, b, c = 0):
     if c == 0:
         return a * b
     else:
-        return a * b + c
+        return a + b + c
 
 if __name__ == '__main__':
     res = soma_mult(x, y, z) # Chama a função soma_mult()
     print(res) # 15
+
+# A função é polimórfica, pois pode receber argumentos de tipos diferentes.
